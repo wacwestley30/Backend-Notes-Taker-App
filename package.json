@@ -1,5 +1,5 @@
 {
-  "name": "Backend-Notes-Taker-app",
+  "name": "backend-notes-taker-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "20.11.0",
+    "npm": "10.5.0"
   }
 }
