@@ -19,7 +19,9 @@ After cloning, running `npm i` within the terminal should install the dependenci
 
 ## Usage
 
-Once the dependencies have been downloaded, running `npm start` will start the application using localhost. At first, the user is taken to the home page and in the middle is a "Get Started" button to start taking notes. After clicking the button, the user is brought to the `/notes` endpoint.
+[Click here for the Live App deployed on Heroku](https://backend-notes-taker-app-0b812ac78ad1.herokuapp.com/)
+
+Once the dependencies have been downloaded, running `npm start` will start the application locally using localhost. Feel free to use the live page on Heroku also. At first, the user is taken to the home page and in the middle is a "Get Started" button to start taking notes. After clicking the button, the user is brought to the `/notes` endpoint.
 
 Any notes already within the db.json file will be `GET` fetched from the db.json file and displayed on the left side of the page. Every note can be displayed again by click on them and they will be presented within the form on the right side of the page. At the top, if the user wants to clear the page to create a new note the "New Note" button will clear the form on the right for the user to create a new note.
 
