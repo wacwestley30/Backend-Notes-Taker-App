@@ -36,7 +36,8 @@ router.post('/api/notes', (req, res) => {
         }
         const notes = JSON.parse(data);
         notes.push(newNote);
-        fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(notes), err => {
+        const notesString = JSON.stringify(notes, null, 2);
+        fs.writeFile(path.join(__dirname, '../db/db.json'), notesString, err => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Server Error' });
@@ -57,7 +58,8 @@ router.delete('/api/notes/:id', (req, res) => {
         }
         let notes = JSON.parse(data);
         notes = notes.filter(note => note.id !== noteId);
-        fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(notes), err => {
+        const notesString = JSON.stringify(notes, null, 2);
+        fs.writeFile(path.join(__dirname, '../db/db.json'), notesString, err => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Server Error' });
